@@ -1,17 +1,17 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
+  title:        "Spade Demoscene VGA"      # Project title
+  author:       "zufallsgenerat0r"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "A VGA demoscene entry using Spade HDL"      # One line description of what your project does
   language:     "Spade" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     10000   # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     50000000   # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_example"
+  top_module:  "tt_um_zufallsgenerat0r_demo"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
@@ -32,15 +32,15 @@ pinout:
   ui[6]: ""
   ui[7]: ""
 
-  # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  # Outputs (TinyVGA PMOD accent)
+  uo[0]: "R1"
+  uo[1]: "R0"
+  uo[2]: "G1"
+  uo[3]: "G0"
+  uo[4]: "B1"
+  uo[5]: "B0"
+  uo[6]: "hsync"
+  uo[7]: "vsync"
 
   # Bidirectional pins
   uio[0]: ""

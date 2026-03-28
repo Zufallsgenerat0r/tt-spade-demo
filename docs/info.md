@@ -1,20 +1,11 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
+Generates a 640x480@60Hz VGA signal using the TinyVGA PMOD. The 50 MHz input clock is divided by 2 internally to produce a 25 MHz pixel clock. A VGA timing generator produces horizontal and vertical sync signals along with pixel coordinates, which are fed to a color generator that outputs 2-bit-per-channel RGB (64 colors total).
 
 ## How to test
 
-Explain how to use your project
+Connect the TinyVGA PMOD to the output pins and attach a VGA monitor. After reset, the display should show a color bar test pattern.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+TinyVGA PMOD connected to the output pins, VGA monitor.
