@@ -39,7 +39,7 @@ async def test_project_gatelevel(dut):
     for _ in range(0, 1700):
         await FallingEdge(clk)
         uo = dut.uo_out.value
-        if uo is not None:
+        if uo.is_resolvable:
             hsync_bit = (int(uo) >> 6) & 1
             if hsync_bit == 0:
                 hsync_seen_low = True
